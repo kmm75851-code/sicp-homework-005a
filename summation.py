@@ -6,13 +6,13 @@ def summation(n, term):
     >>> summation(5, lambda x: x * x)
     55
     >>> summation(3, lambda x: x ** 3)
-    36.
+    36
     """
     resalt = 0
     k = 1
     while n >= k:
         resalt += term(k)
-        k -= 1
+        k += 1
     return resalt
 
 
