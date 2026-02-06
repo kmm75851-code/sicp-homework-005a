@@ -8,4 +8,13 @@ def summation(n, term):
     >>> summation(3, lambda x: x ** 3)
     36
     """
-    pass
+    resalt = 0
+    k = 1
+    while n >= k:
+        resalt += term(k)
+        k -= 1
+    return resalt
+
+
+
+

@@ -8,4 +8,4 @@ def apply_twice(f, x):
     >>> apply_twice(lambda x: x * x, 2)
     16
     """
-    pass
+    return f(f(x))
