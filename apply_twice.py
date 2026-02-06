@@ -6,6 +6,6 @@ def apply_twice(f, x):
     >>> apply_twice(lambda x: x * 2, 3)
     12
     >>> apply_twice(lambda x: x * x, 2)
-    16
+    16.
     """
     return f(f(x))
